@@ -1,0 +1,32 @@
+.card {
+	background-color: #ccc;
+ 	width: 150px;
+ 	height: auto;
+ 	margin: .75em;
+}
+
+#hit {
+	background-color: #ccc;
+}
+
+#yes, #no {
+	padding: .5em;
+	margin: .75em;
+}
+
+h1 {
+	font-size: 1.2em;
+	font-weight: bold;
+	font-family: sans-serif;
+	padding: .5em;
+}
+
+p {
+	font-size: 1em;
+	font-family: sans-serif;
+	padding: .5em;
+}
+
+#dealCards {
+	margin-left: 1em;
+}

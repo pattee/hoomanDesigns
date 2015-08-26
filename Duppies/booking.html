@@ -1,0 +1,78 @@
+<!html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+</head>
+
+<body id="bookings">
+    <header>
+        <section class="col1">
+            <a href="index.html"><img id="logo" src="images/logos/duppiesLogo.jpg" /></a>
+        </section>
+
+        <ul id="social">
+            <li id="twitter"><a href="https://twitter.com/theduppies" target="_blank"></a></li>
+            <li id="facebook"><a href="https://www.facebook.com/TheDuppies" target="_blank"></a></li>
+            <li id="myspace"><a href="https://myspace.com/theduppies" target="_blank"></a></li>
+            <li id="youtube"><a href="https://www.youtube.com/watch?v=Yxf20y0LVVI" target="_blank"></a></li>
+        </ul>
+
+        <ul id="navigation">
+        	<li><a href="index.html">Home</a></li>
+            <li><a href="http://theduppies.storenvy.com/">Shop</a></li>
+            <li><a href="flyers.html">Flyers</a></li>
+            <li><a href="booking.html" id="booking">Booking</a></li>
+            <li><a href="members.html">Members</a></li>
+        </ul>
+
+    </header>
+    <main>
+        <section class="section">
+        	<h3>Looking to Book a Gig?</h3>
+        	<p>Fill out the following form and we'll get back with you and discuss details.</p>
+        	<fieldset>
+        		<table>
+        			
+		        	<form action="booking.php" method="post" id="booking">
+		        		<tr><td id="name"><label for="name">Your Name</label></td></tr>
+		        		<tr><td><input type="text" name="name" autofocus/></td></tr>
+		        		
+		        		<tr><td id="email"><label for="email">Email</label></td></tr>
+		        		<tr><td><input type="email" name="email" /></td></tr>
+		        		
+		        		<tr><td id="number"><label for="number">Phone Number</label></td></tr>
+		        		<tr><td><input type="text" name="number" /></td></tr>
+		        		
+		        		<tr><td id="date"><label for="bookingDate">What Date Are You Interested In?</label></td></tr>
+		        		<tr><td><input type="date" name="bookingDate" id="datepicker"/></td></tr>
+		        		
+		        		<tr><td id="location"><label for="location">Where are you located?</label></td></tr>
+		        		<tr><td><input type="text" name="location" placeholder="City, State"/></td></tr>
+		        		
+		        		<tr><td id="venue"><label for="venue">What's the name of the venue?</label></td></tr>
+		        		<tr><td><input type="text" name="venue" /></td></tr>
+		        		
+		        		<tr><td id="comments"><label for="comments">Mention anything else here</label></td></tr>
+		        		<tr><td><textarea name="comments"></textarea></td></tr>
+		        		
+		        		<tr><td><label>*What is 2+2? (Prove you're human)</label></td></tr>
+						<tr><td><input name="human" placeholder="Type Here"></td></tr>
+		        		
+		        		<tr><td><input id="submit" type="submit" value="Submit" /></td></tr>
+		        	</form>
+	        	</table>
+        	</fieldset>
+        </section>
+
+    </main>
+    
+    <footer>
+    	<p>Made by Hooman Designs</p>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    
+</body>
+</html>
