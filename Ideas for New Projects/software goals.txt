@@ -1,2 +1,0 @@
-Software goals: 
-Book system that makes it easier to post to Amazon. Just scan the books and it prices it according to market, lists it, and then when you're done with a bulk order, it creates the label to send it to Amazon for their fulfilment service.
