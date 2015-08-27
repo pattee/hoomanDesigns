@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('LeagueGothic-Regular-webfont.eot');
+    src: url('LeagueGothic-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('LeagueGothic-Regular-webfont.woff2') format('woff2'),
+         url('LeagueGothic-Regular-webfont.woff') format('woff'),
+         url('LeagueGothic-Regular-webfont.ttf') format('truetype'),
+         url('LeagueGothic-Regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archisticonormal';
+    src: url('Archistico_Simple-webfont.eot');
+    src: url('Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Archistico_Simple-webfont.woff') format('woff'),
+         url('Archistico_Simple-webfont.ttf') format('truetype'),
+         url('Archistico_Simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: "LeagueGothicRegular",helvetica,arial,sans-serif;
+}
+
+header {
+	background-color: #2F2B2C;
+	height: 100px;
+	text-transform: uppercase;
+	border-bottom: #D0D0D0 solid 9px;
+}
+
+header img {
+	margin: .3em;
+}
+
+header h1 {
+	font-family: "archisticonormal";
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+header h2 {
+    letter-spacing: 1px;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+
+header ul {
+	font-size: 1.20em;
+	font-weight: 500;
+	letter-spacing: .25rem;
+}
+
+.light {
+	color: #E2F3FB;
+}
+
+.red {
+	color: #D9593D;
+}
+
+.container ul {
+	list-style-type: none;
+}
+
+.container li {
+	display: inline;
+	padding: 1em;
+}
+
+.container a {
+	text-decoration: none;
+}
+
+.container a:link, .container a:visited {
+	color: #67585e;
+}
+
+.container a:hover, .container a:active {
+	color: #fff;
+}
+
+#homePage li a#work, #blogPage li a#blog, #contactPage li a#contact {
+	color: #c7f9dc;
+}
+
+#onecrafty {
+	background-image: url("../images/onecraftyBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#onecrafty a {
+	display: block;
+}
+
+#onecrafty:hover {
+	background-image: url("../images/onecraftyColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+#coffeeShop {
+	background-image: url("../images/coffeeShopBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#coffeeShop a {
+	display: block;
+}
+
+#coffeeShop:hover {
+	background-image: url("../images/coffeeShopColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+
+#duppies {
+	background-image: url("../images/theDuppiesBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#duppies a {
+	display: block;
+}
+
+#duppies:hover {
+	background-image: url("../images/theDuppiesColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+
+#twentyOne {
+	background-image: url("../images/twentyOneBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#twentyOne:hover {
+	background-image: url("../images/twentyOneColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+#findFest {
+	background-image: url("../images/findFestBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#findFest:hover {
+	background-image: url("../images/findFestColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+#crossword {
+	background-image: url("../images/crosswordBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#crossword:hover {
+	background-image: url("../images/crosswordColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+#paradiseGardens {
+	background-image: url("../images/paradiseGardensBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#paradiseGardens:hover {
+	background-image: url("../images/paradiseGardensColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+#resources {
+	background-image: url("../images/resourcesBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px;
+}
+
+#resources:hover {
+	background-image: url("../images/resourcesColor.jpg");
+	border: 9px solid #6A6A6A;
+}
+
