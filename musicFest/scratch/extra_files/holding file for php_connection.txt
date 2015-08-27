@@ -1,0 +1,108 @@
+(count($result)) {
+	
+		foreach($result as $key =>  $row) {
+			
+			echo
+			('<div class="grid">
+				<div class="col_8">
+					<div class="col_12">
+						<div class="col_8">
+						<h4>' . $result[$key][0] . '</h4><p>' . $result[$key][3] . ', ' . $result[$key][4] .'</p><p>From: ' . $result[$key][6] . ' To: ' . $result[$key][1] . '</p>
+						<p>Lineup: ' . $result[$key][2] . '</p>
+						<p>Genre: ' . $result[$key][5] . '</p>
+						</div>
+						<div class="col_4">
+							<img src="images/ROMP_Logo.png" width="200" height="100" />
+						</div>
+					<!-- HR.alt1 -->
+					<hr class="alt1" />
+					</div>
+				</div>
+			</div>');
+		} //end foreach
+	}
+	
+	
+try {
+  $username = "root";
+  $password = "RedRaw11";
+  $sql = 'mysql:host=localhost;dbname=festival';
+
+  $conn = new PDO($sql, $username, $password);
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $data = $conn->query('SELECT * FROM festivals');
+  
+  //test whether the query has an error or is successful
+  $errorInfo = $conn->errorInfo();
+  if(isset($errorInfo[2])) {
+	$error = $errorInfo[2];
+  }
+} catch(PDOException $e) {
+	$error = 'ERROR: ' . $e->getMessage();
+}
+/*
+$data = array();
+$stmt = $dbh->query("SELECT * FROM books");
+foreach ($stmt->fetchAll() as $row) {
+    $data[$row['name']] = new Book($row['name'], $row['author'], $row['description']);
+}
+return $data;*/
+
+foreach($data as $row) {
+	echo(current($data));
+	print_r($row);
+	echo("<br />");
+	echo("<br />");
+}
+
+class MyClass
+{
+    public $var1 = 'value 1';
+    public $var2 = 'value 2';
+    public $var3 = 'value 3';	
+}
+
+$class = new MyClass();
+
+foreach($class as $key => $value) {
+    print "$key => $value\n";
+}
+echo "\n";
+
+
+
+
+
+
+
+/* this 'returns' the data to the calling page
+function getRow($stmt) {
+	return $result>fetch;
+}
+*/
+
+
+
+//this is to check the SQL syntax as well as the error messages
+if (isset($error)) {
+	echo $error;
+} else {
+	echo 'ok';
+}
+
+*********************************
+if ( count($result) ) { 
+    foreach($result as $row) {
+      if(is_array($row)) {
+		foreach ($row as $value) {
+			echo($value);
+		}
+	  } else {
+			echo ('high');
+	  }
+	  echo '<br/>';
+	  echo '<br/>';
+    }   
+  } else {
+    echo "No rows returned.";
+  }

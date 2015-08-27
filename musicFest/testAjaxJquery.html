@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+<p>Hello</p>
+<div id="gone">hmmm....</div>
+    <script>
+        $("#gone").html("once upon a time");
+        $.getJSON( "http://api.songkick.com/api/3.0/metro_areas/24578-us-jacksonville/calendar.json?apikey=I8P4WAkVadRwPnI2", function( data ) {
+            var items = ["hello", "goodbye"];
+            $.each( data, function( key, val ) {
+                items.push(val);
+            });
+            console.log(items);
+            /*var info = items[2];
+            console.dir(info.results.event);*/
+        });
+    </script>
+</body>
+</html>

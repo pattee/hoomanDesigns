@@ -1,0 +1,26 @@
+Actions
+1. I want to be able to search by location(s).
+2. Search by artist or band name.
+3. Search by stadium(s).
+4. Search by my starred artists on Spotify.
+5. Save events to a personal list?
+
+SETTINGS.
+Be able to have it remember my location then reset that location. 
+
+FEATURES.
+Get notifications when artists come into town.
+Get notifications when saved events are about to happen.
+I want to know how many seats are sold out.
+
+Step 1:
+Design the prototype with InVision.
+
+Other steps: 
+acquire spotify api key
+would the person need to log on every time?
+use a mean stack to keep personal information?
+use a mean stack to save events to a personal list?
+determine how to get info through load to get % sold out.
+
+how to notify people of upcoming events?
