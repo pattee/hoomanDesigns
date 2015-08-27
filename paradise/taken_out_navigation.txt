@@ -1,0 +1,26 @@
+<!--row 1 navigation-->
+    <div class="row">
+    	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+        	<div class="navbar-header">
+            	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-arrow-down"></span>
+                MENU
+                </button>
+            </div> <!--closes the navbar-header div-->
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gardening.html">Gardening</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <!--<ul class="nav navbar-nav pull-right">
+                    <li><a href="https://www.facebook.com/"><img src="images/facebook-Icon.png"></a></li>
+                    <li><a href="https://twitter.com/"><img src="images/Twitter-Icon.png"></a></li>
+                    <li><a href="https://www.pinterest.com/‎"><img src="images/Pinterest-Icon.png"></a></li>
+                    <li><a href="http://www.flickr.com/"><img src="images/Flickr-Icon.png"></a></li>
+                </ul>-->
+            </div> <!--closes the class "collapse navbar collapse"-->
+         </nav> <!--closes the nav tag-->
+     </div>   <!--closes the row 1 tag-->

@@ -1,0 +1,573 @@
+/*medium gray #d3d3d3
+dark gray #a9a9a9
+teal #64edf0 */
+body {
+    background-color: #ccc;
+    background-image: url("../images/tiled.jpg");
+    position: relative;
+    font-family: "Enriqueta", sans-serif;
+}
+
+/* naviagation menu */
+@media (min-width: 1235px) {
+    nav {
+        width: 75%;
+        margin-left: 12.5%;
+        margin-top: 65px;
+        postion: relative;
+    }
+
+    nav ul {
+        z-index: 10;
+        position: relative;
+        bottom: 59px; /* moving the menu list up and down */
+    }
+
+    nav li {
+        display: inline-block;
+        padding: .9em 5%;  /*padding around li for color display*/
+    }
+
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ba160b;
+    }
+
+    nav a:hover {
+        color: #000;   
+    }
+
+    #active {
+        background-color: #424242; /* dark gray background */
+        color: #fff; /* white text */
+    }
+  
+}
+
+@media (max-width: 1235px) and (min-width: 1065px) {
+    img[src="images/menuRibbon.png"] {
+     display: none;   
+    }
+    
+    nav {
+        width: 72.5%;
+        postion: relative;
+        margin: 5% auto 5%;
+    }
+
+    nav ul {
+        z-index: 10;
+        position: relative;
+        background-color: #ccc;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: .9em 4%;  /*padding around li for color display*/
+    }
+
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ba160b;
+    }
+
+    nav a:hover {
+        color: #000;   
+    }
+
+    #active {
+        background-color: #424242; /* dark gray background */
+        color: #fff; /* white text */
+    }
+
+}
+
+
+@media (max-width: 1065px) {
+    img[src="images/menuRibbon.png"] {
+     display: none;   
+    }
+    
+    nav {
+        width: 72.5%;
+        postion: relative;
+        margin: 5% auto 5%;
+    }
+
+    nav ul {
+        z-index: 10;
+        position: relative;
+        background-color: #ccc;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: .9em 3%;  /*padding around li for color display*/
+    }
+
+    nav a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #ba160b;
+    }
+
+    nav a:hover {
+        color: #000;   
+    }
+
+    #active {
+        background-color: #424242; /* dark gray background */
+        color: #fff; /* white text */
+    }
+}
+/* the fred font class  */
+
+.fred {
+    font-family: "Fredericka the Great";   
+}
+
+/* a background of gray */
+.gray {
+    background: #ccc;   
+}
+
+#headline {
+    position: relative;
+    top: 50px;
+}
+
+
+/* the horizontal rules */
+#bg_red {
+    height: 40px;  
+    background-color: #ba160b;
+    margin-bottom: 20px;
+}
+
+#lt_red {
+    height: 10px;   
+    background-color: #ba160b;
+}
+
+h1 {
+    color:aqua;   
+}
+
+#logo {
+    display: block;
+    margin: -110px auto 0;
+}
+
+main {
+    width: 72%;
+    background: #fff;
+    margin: -50px auto 0;
+    padding-top: 20px;
+    position: relative;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    margin: 0 0 2% 2.5%;
+}
+
+.clearfix {
+    clear: both;   
+}
+
+/* footer styling */
+footer {
+    width: 72%;
+    clear: both;
+    font-size: 1.3em;
+    margin: 1em auto .5em;
+    background-color: #808080;
+    height: 8em;
+    position: relative;
+}
+
+footer div {
+    float: left;
+    margin: 1%;
+    padding: 4% 3%;
+    border-right: dashed 2px #fff;
+    height: 85%;
+}
+
+footer div:first-of-type {
+    margin-left: 0;
+}
+
+footer div:last-of-type {
+    border-right: none;
+}
+
+footer h2 {
+    font-size: 1.9em;
+    color: #64edf0;
+    opacity: .8;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    color: #64edf0;
+    opacity: .8;
+}
+
+/* the small width of the footer */
+.small {
+   width: 13.09%; 
+   position: relative;
+}
+
+.small img[src="images/coffeeCup.png"] {
+    position: absolute;
+    top: -10px;
+}
+
+.small img[src="images/medal.png"] {
+    position: absolute;
+    top: -5px;
+}
+
+.small h4 {
+    position: absolute;
+    top: 115px;
+    left: .5em;
+    font-size: .8em;
+}
+
+/* the big width of the footer */
+.big {
+    width: 20.9%;
+    position: relative;
+}
+
+.big p {
+    font-size: .8em;
+    margin-left: 25px;
+    line-height: 1.2;
+}
+
+.big h2 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+/* all images have a max width to them */
+img {
+    max-width: 100%;   
+}
+
+/* carousel */
+
+@keyframes carousel {
+    0% { left: 0; }
+    11% { left: 0; }
+    12.5% { left: -100%; }
+    23.5% { left: -100%; }
+    25% { left: -200%; }
+    36% { left: -200%; }
+    37.5% { left: -300%; }
+    48.5% { left: -300%; }
+    50% { left: -400%; }
+    61% { left: -400%; }
+    62.5% { left: -300%; }
+    73.5% { left: -300%; }
+    75% { left: -200%; }
+    86% { left:-200%; }
+    87.5% { left: -100%; }
+    98.5% { left: -100%; }
+    100% { left: 0; }
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%; 
+}
+
+.panes {
+    list-style: none;
+    position: relative;
+    width: 500%;  /*number of panes times 100 */
+    overflow: hidden;  /* this is used to clear floats */
+    
+    -moz-animation: carousel 30s infinite;
+    -webkit-animation: carousel 30s infinite;
+    animation: carousel 30s infinite;
+}
+
+.panes > li {
+    position: relative;
+    float: left;
+    width: 20%; /* 100 / number of panes */
+}
+
+.carousel img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+.carousel h2 {
+    padding: 0.5em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    text-align: right;
+    color: #fff;
+    background-color: rgba(0,0,0,0.75);
+}
+
+/* styles for blue boxes and red boxes */
+.bluebox {
+    border: #64edf0 3px solid;
+}
+
+.redbox {
+    border: #ba160b 3px dashed;  
+}
+
+.textBubble {
+    margin-bottom: 1.5em; 
+    line-height: 1.3;
+    padding:  1em;
+}
+
+.textBubble h2 {
+    font-size: 1.8em;   
+}
+
+.textBubble p {
+    font-size: 1em;   
+}
+
+.textBubble h2 ~ h2 {
+    padding-top: .5em;
+}
+
+.column img[src="images/ribbon.png"] {
+    position: absolute;
+    right: -1em;
+}
+
+/* social buttons */
+
+#social {
+    position: relative; 
+    right: -25px;
+}
+
+#follow {
+    position: absolute;
+    right: 120px;
+    top: 18px;
+    z-index: 5;
+    font-family: 'IM Fell French Canon';
+    font-size: 1.5em;
+    font-style: italic;
+    color: #fff;
+}
+
+#social li {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+#social img {
+    position: absolute;
+    top: 5px;
+}
+
+#social li, #social a {
+    height: 36px;
+    display: block;
+}
+
+#social li:last-of-type {
+    border-right: none;   
+}
+
+#facebook {
+    right: 55px;
+    width: 27px;
+    background-image: url("../images/social.png");
+    background-position: 0 0;
+}
+
+#twitter {
+    right: 20px;
+    width: 26px;
+    background-image: url("../images/social.png");
+    background-position: -25px 0;
+}
+
+#googleplus {
+    right: -15px;
+    width: 30px;
+    background-image: url("../images/social.png");
+    background-position: -50px 0;
+}
+
+/* about us page */
+
+#aboutUsImage {
+    float: left; 
+    margin: 1em 1.5em 0 0;
+}
+
+#aboutWrapper, #menuWrapper {
+    width: 85%;
+    margin: 0 auto;
+}
+
+#aboutUsPage {
+    line-height: 1.8;
+}
+
+#aboutUsPage p {
+    margin: 20px 0;   
+}
+
+#aboutUsPage p:last-of-type {
+    padding-bottom: 35px;
+}
+
+#aboutWrapper h1, #menuWrapper h1 {
+    font-size: 2em;
+    color: #ba160b;
+    line-height: 1.8;
+}
+
+#aboutWrapper hr:first-of-type {   
+    background-color: #ba160b;
+    height: 5px;
+    border: #ba160b;
+}
+
+#aboutWrapper hr {
+    background-color: #ba160b;
+    height: 1px;
+    border: #ba160b;   
+}
+
+/* drink menu page}*/ 
+
+#menuWrapper .columnA {
+    float: left;
+    width: 45%;
+}
+
+#menuWrapper .columnB {
+    float: right;
+    width: 45%;
+}
+
+#menuWrapper h1 {
+    margin-bottom: .3em;
+}
+
+#menuWrapper hr:first-of-type {   
+    background-color: #ba160b;
+    height: 5px;
+    border: #ba160b;
+}
+
+#menuWrapper hr {
+    background-color: #ba160b;
+    height: 1px;
+    border: #ba160b;   
+}
+
+#menuWrapper h2 {
+    font-size: 1.5em;
+    color: #ba160b;
+    border-bottom: dashed 2px; #ccc;
+    padding-top: 1em;
+    padding-bottom: .5em;
+}
+
+.itemName {
+    color: #64edf0;
+    padding-top: 1em;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    width: 75%;
+}
+
+.description {   
+    padding-top: .4em;
+    font-size: .90em;
+}
+
+.price {
+    color: #ba160b; 
+    width: 25%;
+    text-align: right;
+}
+
+.topMargin td  {
+    padding-top: 1.75em;
+}
+
+.columnB img {
+    margin-top: 2em;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

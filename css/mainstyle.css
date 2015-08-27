@@ -29,13 +29,14 @@ body {
 
 header {
 	background-color: #2F2B2C;
-	height: 100px;
+	height: 110px;
 	text-transform: uppercase;
 	border-bottom: #D0D0D0 solid 9px;
 }
 
 header img {
-	margin: .3em;
+	margin: 0 5px;
+    float: left;
 }
 
 header h1 {
@@ -43,8 +44,10 @@ header h1 {
     letter-spacing: 1px;
     font-size: 2.5em;
     text-transform: uppercase;
-    margin: 0;
+    margin: 10px;
     padding: 0;
+    color: #fff;
+    float: left;
 }
 
 header h2 {
@@ -63,7 +66,7 @@ header ul {
 }
 
 .light {
-	color: #E2F3FB;
+	background-color: #E2F3FB;
 }
 
 .red {
@@ -101,7 +104,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px 30px 25px;
 }
 
 #onecrafty a {
@@ -119,7 +122,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px;
 }
 
 #coffeeShop a {
@@ -138,7 +141,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px;
 }
 
 #duppies a {
@@ -157,7 +160,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px 25px;
 }
 
 #twentyOne:hover {
@@ -171,7 +174,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px;
 }
 
 #findFest:hover {
@@ -185,7 +188,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px;
 }
 
 #crossword:hover {
@@ -199,7 +202,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px 25px;
 }
 
 #paradiseGardens:hover {
@@ -213,7 +216,7 @@ header ul {
 	height: 275px;
 	border: 9px solid #D0D0D0;
 	border-radius: 50%;
-	margin: 30px;
+	margin: 30px 20px;
 }
 
 #resources:hover {
