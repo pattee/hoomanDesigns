@@ -1,0 +1,296 @@
+// some sassy styles
+
+// variables
+$iceBlue: #add8e6;
+$bicycleRed: #c92c38;
+$grayGreen: #c9d2bf;
+$sherbertOrange: #f7882a;
+$steelMyHeartBlue: #aabebf;
+$offWhiteBlue: #efefef;
+$slightSeaGreen: #b5e2be;
+$OhMyEyesGreen: #a6f353;
+$breakMyHeartGray: #8b8b8b;
+$blueDeep: #3498DB;
+
+//mix-ins
+@mixin center-block() {
+  display: block;
+  text-align: center;
+}
+
+
+/* header styles */
+
+.navbar-default {
+  background-color: #add8e6;
+  border-color: #8b8b8b;
+    .navbar-brand {
+        color: #3498db;
+    }
+    
+    .navbar-brand:hover, .navbar-brand:focus {
+        color: #ffffff;
+    }
+    
+    .navbar-text {
+      color: #3498db;
+    }
+    
+    .navbar-nav > li > a {
+      color: #3498db;
+    }
+    
+    .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
+      color: #ffffff;
+    }
+    
+    .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+      color: #ffffff;
+      background-color: #8b8b8b;
+    }
+    
+    .navbar-nav > .open > a, .navbar-nav > .open > a:hover, .navbar-nav > .open > a:focus {
+      color: #ffffff;
+      background-color: #8b8b8b;
+    }
+    
+    .navbar-toggle {
+      border-color: #8b8b8b;
+    }
+    
+    .navbar-toggle:hover, .navbar-toggle:focus {
+      background-color: #8b8b8b;
+    }
+    
+    .navbar-toggle .icon-bar {
+      background-color: #3498db;
+    }
+
+    .navbar-collapse, .navbar-form {
+      border-color: #3498db;
+    }
+    
+    .navbar-link {
+      color: #3498db;
+    }
+    
+    .navbar-link:hover {
+      color: #ffffff;
+    }
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #3498db;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #8b8b8b;
+  }
+}
+
+/* carousel designs */
+.gray {
+    background-color: darken($offWhiteBlue, 10%);
+    margin-top: -20px;
+    padding-bottom: 15px;
+}
+
+.blurb {
+    .glyphicon {
+        font-size: 6em;
+        @include center-block();
+    }
+    
+    h3, p {
+        @include center-block();
+    }
+    margin-bottom: 3em;
+}
+
+.row > .col-md-3 {
+    margin-top: 3em;
+}
+
+/* Medium devices (desktops, 1000px and up) */
+@media screen and (min-width: 1000px) { 
+    .blurbText {
+        margin-top: 2em;
+        background-color: $slightSeaGreen;
+        color: $breakMyHeartGray;
+        padding: 1em;
+        min-height: 225px;
+        line-height: 1.8;
+        font-size: 1.1em;
+    }
+    #portfolioSmall {
+        display: none;
+    }
+    #portfolioLarge {
+        display: initial;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #blurb {
+        display: none;
+    }
+    #portfolioLarge {
+        display: none;
+    }
+    #portfolioSmall {
+        display: initial;
+    }
+}
+
+/* Portfolio Section */
+#portfolioLarge {
+    .row {
+        background-color: lighten($breakMyHeartGray, 20%);
+        color: darken($breakMyHeartGray, 10%);
+    }
+    h2 {
+        padding-top: 1em;
+        font-style: bold;
+        color: $sherbertOrange;
+    }    
+    p {
+        padding-bottom: 1.2em;
+    }
+}
+
+/* adding space to the second row in portfolio */
+#space {
+    padding-top: 1.5em;
+}
+
+#portfolioLarge img {
+    border: 1px solid $sherbertOrange;
+}
+/* End of Portfolio Section */
+
+/* Testimonials Section*/
+.blueBackground {
+    background-color: $blueDeep;
+    padding-bottom: 20px;
+}
+
+#testimonials {
+    h2 {
+        padding-top: 1em;
+        border-bottom: lighten($blueDeep, 15%) 1px solid;
+        padding: 40px 0;
+        color: #fff;
+    }
+    
+    .row {
+        padding-top: 2em;
+    }
+}
+
+/* adding a border to images in testimonials */
+.person img {
+    border: 10px solid $iceBlue;
+    border-radius: 100px;
+    margin: auto auto 10px;
+    padding: 2px;
+    width: 100px;
+}
+
+.feedbackBox {
+    border-radius: 10px;
+    background-color: lighten($blueDeep, 10%);
+    padding: 1em 2em;
+    color: #fff;
+    margin-top: -65px;
+    font-size: 1.2em;
+    h4 {
+        padding-top: 45px;
+        padding-bottom: 15px;
+        border-bottom: $blueDeep 1px solid;
+    }
+    p {
+        padding-top: 10px;
+        line-height: 2;
+    }
+}
+
+.person + .person {
+    padding-top: 2em;
+}
+
+.darkGrayBackground {
+    background: darken($breakMyHeartGray, 10%);
+    padding: 20px 0;
+}
+
+#ourStory {
+    opacity: 0.8;
+    filter: alpha(opacity=40);
+    span {
+        color: #fff;
+        line-height: 2;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 1.5em;
+    }
+}
+
+.post-content {
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 75px;
+    right: 75px;
+    position: absolute;
+}
+
+.thumbnail{
+    position:relative;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+/* Contact Us Styling */
+
+#contact { 
+    margin: 4em auto 6em;
+    color: darken($breakMyHeartGray, 10%);
+    .form { 
+        background-color: lighten($breakMyHeartGray, 35%);
+        border-radius: 3px;
+        padding: 1em 3em 3em;
+    }
+    .contact {
+        ul {
+            list-style: none;
+            margin-top: 15px;
+            h4 {
+                margin-bottom: 5px;
+                padding-bottom: 0;
+            } 
+            p {
+                margin-top: 0;
+                padding-top: 0;
+            }
+        }
+        li {
+            margin-top: 30px;
+        }
+    }
+    .glyphicon {
+        margin: 5px 20px 0 -35px;
+        font-size: 2em;
+        color: $OhMyEyesGreen;
+    }
+}
+
+
+
