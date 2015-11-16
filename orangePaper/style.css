@@ -1,0 +1,241 @@
+/*colors
+orange: #ff6200
+gray: #f9f9f9
+darkOrange: #be3600
+*/
+@font-face {
+    font-family: "bebas";
+    src: url("BEBAS___.TTF") format("truetype");
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #313131;
+}
+
+header {
+    font-family: "bebas", "Open Sans", sans-serif;
+}
+
+.actionBar span + span {
+    padding-left: 10px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+/* dark orange text */
+.dOT {
+    color: #be3600;
+}
+
+/* orange text */
+.oText {
+    color: #ff6200;
+}
+
+/* white text */
+.wText {
+    color: #fff;
+}
+
+#logo {
+    font-size: 45px;
+}
+
+/* top header bars styling */
+.actionBar {
+    background-color: #ff6200;
+    padding: 15px 0;
+}
+
+#logoMenu {
+    background-color: #e0e0e0;
+    padding: 45px 0;
+}
+
+/* clearing the floats */
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+
+/* the navigation menu */
+#nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-alignment: center;
+    font-family: "Myriad Pro Regular", "Open Sans", sans-serif;
+}
+
+#nav li {
+    position: relative;
+    display: inline;
+    margin: 1px 2px 1px 1px;
+}
+
+#nav li:hover {
+    margin: 0;
+}
+
+#nav a {
+    display: inline-block;
+    padding: 10px;
+}
+
+#nav ul {
+    position: absolute; 
+    left: -9999px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+#nav ul li {
+    display: block;
+}
+
+#nav li:hover ul {
+    left: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #F9F9F9;
+}
+
+#nav li:hover ul ul {
+    left: -9999px;
+}
+
+#nav li:hover ul li:hover ul {
+    left: 125px;
+    top: 0;
+}
+
+#nav li:hover a {
+    text-decoration: none;
+    border-bottom: 5px solid #ff6200;
+}
+
+#nav li:hover ul a {
+    text-decoration: none;
+    border: none;
+}
+
+#nav li:hover ul a:hover {
+    text-decoration: none;
+}
+
+#nav ul a {
+    white-space: nowrap;
+    display: block;
+}
+
+#nav a {
+    text-decoration: none;
+}
+
+#nav a:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contactForm {
+    width: 47.5%;
+}
+
+#address {
+    width: 47.5%;
+    margin-left: 5%;
+}
+
+input, textarea {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    resize: none;
+}
+
+input[type="tel"] {
+    width: 42.5%;
+}
+
+input[type="email"] {
+    width: 42.5%;
+}
+
+#breadCrumb {
+    color: #d2d2d2;
+    padding-top: 15px;
+}
+
+#contact {
+    color: #535353;
+}
+
+#contactInfo {
+    padding: 65px 0 100px;
+    line-height: 1.25;
+}
+
+#contactInfo h3 {
+    color: #ff6200;
+    font-size: 40px;
+}
+
+#address img {
+    padding-top: 25px;
+}
+
+#contactForm h4, #address h4 {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    color: #ff6200;
+    font-size: 35px;
+    border-bottom: solid 5px #585858;
+}
+
+address {
+    line-height: 1.5;
+}
+
+button {
+    background-color: #ff6200;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    color: #fff;
+    width: 150px;
+    font-size: 1.1em;
+}
+
+#address, #contactForm {
+    margin-bottom: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

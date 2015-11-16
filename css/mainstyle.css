@@ -238,3 +238,24 @@ header ul {
     background-image: url("../images/bikeShop.jpg");
 	border: 9px solid #6A6A6A;
 }
+
+#orangePaper {
+    background-image: url("../images/orangePaperBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px 20px;
+}
+
+#orangePaper:hover {
+    background-image: url("../images/orangePaper.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+
+
+
+
+
+
