@@ -253,6 +253,22 @@ header ul {
 	border: 9px solid #6A6A6A;
 }
 
+#jPage {
+    background-image: url("../images/jewelryLandingPageBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px 20px;
+}
+
+#jPage:hover {
+    background-image: url("../images/jewelryLandingPage.jpg");
+	border: 9px solid #6A6A6A;
+}
+
+
+
 
 
 
