@@ -1,0 +1,198 @@
+/* stylesheet for Design Company Landing Page */
+header {
+  background: url("../images/header.jpg") no-repeat fixed;
+  background-position: 0 -125px;
+  background-size: 100%;
+  min-height: 450px;
+  text-align: center; }
+  header h1 {
+    font-family: "Lobster", sans-serif;
+    color: #353535;
+    font-size: 3em;
+    margin-top: 1em; }
+  header button {
+    background-color: #3dc9b3;
+    width: 180px;
+    padding: 10px;
+    color: #fff;
+    margin: 3em 0 0 0;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 1px #289181;
+    letter-spacing: 1px; }
+  header button:hover {
+    background-color: #32b5a0; }
+
+body {
+  font-family: "Open Sans";
+  padding-bottom: 5em;
+  margin-bottom: 5em; }
+
+.clearfix:before,
+.clearfix:after {
+  content: ".";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+div {
+  text-align: center; }
+
+/* body */
+.section {
+  background-color: #353535;
+  margin-top: 3em; }
+
+#portfolio {
+  padding: 5em;
+  background-color: #f3f5f8; }
+  #portfolio h2, #portfolio img, #portfolio p {
+    margin: 1em 0; }
+
+#stages {
+  margin-top: 6em;
+  margin-bottom: 5em; }
+  #stages .row, #stages h2, #stages h3, #stages img, #stages p {
+    margin: 2em 0; }
+
+#textSlider {
+  background-color: #f3f5f8; }
+  #textSlider img {
+    max-width: 100%; }
+
+#result h2, #result p, #result img {
+  margin: 2em 1em; }
+#result .circles {
+  margin: 6em 1em 0; }
+  #result .circles div + div {
+    margin-left: 10px; }
+
+#photoBlurb {
+  background-image: url("../images/99problems.png");
+  height: 300px;
+  color: #fff;
+  font-family: "Varela Round", sans-serif; }
+  #photoBlurb h2 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3em; }
+  #photoBlurb .tinyCircle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+#sliderImages {
+  margin-top: 5em; }
+
+#actionButton {
+  margin-top: 5em;
+  background-color: #242830;
+  height: 150px; }
+  #actionButton button {
+    background-color: transparent;
+    padding: 20px 25px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+    color: #fff;
+    border: 1px #fff solid;
+    letter-spacing: .25em;
+    font-variant: small-caps; }
+  #actionButton button:hover {
+    background-color: #3dc9b3;
+    border: 1px #3dc9b3 solid;
+    color: #242830; }
+
+#team {
+  margin-top: 6em; }
+  #team img[src="images/sep.png"] {
+    margin: 2em;
+    padding: 2em; }
+  #team h3, #team p {
+    padding-top: 2em; }
+
+.col-md-2 {
+  float: left;
+  width: 50%; }
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  font-size: 10px;
+  color: #fff;
+  line-height: 105px;
+  text-align: center;
+  background: #3dc9b3;
+  margin: 0 auto;
+  font-size: 1.2em; }
+
+.tinyCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  background: #3dc9b3;
+  margin: 0 auto;
+  font-size: 1.2em; }
+
+.smallCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  background: #757575;
+  border: #353535 solid 1px; }
+
+.smallInactiveCircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  background: #fff;
+  border: #353535 solid 1px; }
+
+.threeColumns {
+  width: 80%;
+  margin: 0 auto; }
+  .threeColumns .col-md-1 {
+    line-height: 1.75;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top; }
+  .threeColumns .col-md-1 + .col-md-1 {
+    margin-left: 4%; }
+
+.hexa, .hexa div {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px; }
+
+.hexa {
+  width: 325px;
+  height: 230px; }
+
+.hexa div {
+  width: 100%;
+  height: 100%; }
+
+.hexa {
+  transform: rotate(120deg); }
+
+.hex1 {
+  transform: rotate(-60deg); }
+
+.hex2 {
+  transform: rotate(-60deg); }
+
+/*# sourceMappingURL=stylesheet.css.map */

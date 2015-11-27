@@ -1,0 +1,2 @@
+[Thu Nov 26 2015 16:42:30 GMT-0500 (Eastern Standard Time)] layer "+61 9 211 3741": Expected Either a default asset specification or a layer asset specification but "+" found.
+[Thu Nov 26 2015 16:42:30 GMT-0500 (Eastern Standard Time)] layer "hey@halcyon.com.au": Unsupported extension: au
