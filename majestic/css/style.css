@@ -1,0 +1,244 @@
+/* base colors */
+body {
+  color: #5c5b5b;
+  font-family: sans-serif;
+  background-image: url(../images/background_pattern.png);
+  margin-bottom: 550px; }
+
+.main {
+  box-shadow: 0 0 3px; }
+
+.headSlider {
+  background-color: #fff; }
+
+header {
+  margin-top: 2em;
+  margin-bottom: 1em; }
+
+#logo {
+  position: relative; }
+  #logo h1 {
+    position: absolute;
+    top: 3px;
+    left: 50px;
+    font-size: 2em;
+    color: #cb3702;
+    display: inline;
+    font-weight: 100; }
+
+.menu ul {
+  padding-top: 2em; }
+
+.menu li {
+  display: inline; }
+  .menu li a {
+    padding: .5em .35em;
+    letter-spacing: 1px; }
+  .menu li a:link, .menu li a:visited {
+    text-decoration: none;
+    color: #5c5b5b; }
+  .menu li a:hover, .menu li a:active, .menu li a:focus {
+    text-decoration: none;
+    background-color: #cb3702;
+    color: #fff; }
+
+/* Join button */
+.join {
+  padding-top: 1.75em; }
+
+.join button {
+  background-color: #237ab3;
+  border: none;
+  color: #fff;
+  padding: .2em .75em;
+  font-size: 1em;
+  font-weight: 1;
+  letter-spacing: 2px;
+  float: right; }
+
+.join button:hover {
+  background-color: #8eadc2; }
+
+/* top slider */
+.slider {
+  background: url(../images/fox.jpg) no-repeat;
+  border: solid 3px #090909;
+  min-height: 500px;
+  position: relative;
+  margin: 2em; }
+
+/* information box in slider */
+.info {
+  background: #cb3702;
+  color: #fff;
+  position: absolute;
+  bottom: 2em;
+  left: 1.3em;
+  padding: 1.5em .75em;
+  width: 45%; }
+  .info h2 {
+    font-size: 1.75em;
+    font-weight: 100;
+    padding-bottom: 15px; }
+  .info p {
+    font-size: .75em;
+    font-weight: 100;
+    padding-top: 15px;
+    line-height: 1.5; }
+  .info a:link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.35em; }
+  .info a:hover, .info a:active, .info a:focus {
+    color: #fff;
+    text-decoration: underline;
+    font-size: 1.35em; }
+  .info hr {
+    border-top: dotted 1px #fff; }
+
+/* small green area in information box */
+#plusArea {
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 75px solid #97a123;
+  border-left: 75px solid transparent;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold; }
+
+#plus {
+  position: absolute;
+  bottom: 3px;
+  right: 8px;
+  font-size: 2.5em;
+  font-weight: bold; }
+
+.more {
+  float: right;
+  color: #fff;
+  background-color: #cb3702;
+  padding: 5px 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  border: none; }
+
+.more:hover {
+  background-color: #e43e02; }
+
+/* area with info about design, websites, work etc. */
+.boxes {
+  background-color: #fff;
+  padding-top: 2em; }
+  .boxes hr {
+    border: solid 1px #8eadc2;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .boxes h2 {
+    font-weight: 200;
+    font-size: 1.33em; }
+  .boxes .image_holder {
+    background-color: #8eadc2;
+    height: 100px; }
+
+/* row with information about employees */
+.meet {
+  background-color: #fff;
+  padding-top: 2em; }
+  .meet h2, .meet h3, .meet p {
+    margin-right: 1em;
+    margin-left: 1em; }
+  .meet h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    font-weight: 100; }
+  .meet h3 {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #cb3702; }
+  .meet p {
+    font-size: .75em;
+    line-height: 1.5; }
+  .meet .image_holder {
+    background-color: #8eadc2;
+    height: 75px;
+    width: 75px;
+    float: left;
+    margin: 0 10px 10px 10px; }
+    .meet .image_holder .plusArea {
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 10px;
+      left: 60px;
+      border-bottom: 25px solid #97a123;
+      border-left: 25px solid transparent;
+      color: #fff;
+      font-size: 1em;
+      font-weight: bold; }
+    .meet .image_holder .plus {
+      position: absolute;
+      bottom: 9px;
+      left: 74px;
+      color: #fff;
+      font-size: 1em;
+      font-weight: bold; }
+  .meet .grid_3 {
+    position: relative; }
+
+.employees {
+  position: relative;
+  background-color: #eeeeee;
+  margin-bottom: 1em;
+  padding-bottom: 1em; }
+  .employees a:link, .employees a:visited {
+    color: #5c5b5b;
+    text-decoration: none; }
+  .employees a:hover, .employees a:active {
+    color: #5c5b5b;
+    text-decoration: underline; }
+  .employees hr {
+    border: solid #237ab3 1px;
+    width: 95%;
+    margin: 1em auto; }
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 14px solid red;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  bottom: .80em;
+  right: 2.75em; }
+
+.mobile {
+  padding-top: 2em;
+  background-color: #fff;
+  margin-bottom: 1em; }
+  .mobile hr {
+    border: 1px dotted #237ab3;
+    margin: 1em 0; }
+  .mobile img {
+    max-width: 30%;
+    float: left;
+    margin-right: 15px; }
+  .mobile .grid_4 h2 {
+    font-family: Parisienne;
+    color: #cb3702;
+    font-weight: 400;
+    font-size: 2em; }
+
+footer {
+  height: 100px;
+  margin: 1em 0;
+  background-color: #fff;
+  line-height: 6;
+  box-shadow: 0 0 3px; }
+
+#hooman {
+  float: right; }
