@@ -348,6 +348,20 @@ li a:hover, li a:active {
 	border: 9px solid #6A6A6A;
 }
 
+#UIfive {
+    background-image: url("../images/100DaysUI/005/bikeFindBlackWhiteExample.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px 20px;
+}
+
+#UIfive:hover {
+    background-image: url("../images/100DaysUI/005/bikeFindExample.jpg");
+	border: 9px solid #6A6A6A;
+}
+
 /* STYLES FOR CODE PAGE */
 #github {
     background-image: url("../images/githubProfileBlackWhite.jpg");
