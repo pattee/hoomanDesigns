@@ -1,0 +1,393 @@
+/* base colors */
+$bright_red: #cb3702;
+$text_grey: #5c5b5b;
+$light_grey: #f2f2f2;
+$lightest_grey: #eeeeee;
+$deep_blue: #237ab3;
+$light_blue: #8eadc2;
+$accent_green: #97a123;
+
+body {
+    color: $text_grey;
+    font-family: sans-serif;
+    background-image: url(../images/background_pattern.png);
+    margin-bottom: 550px;
+}
+
+.main {
+    box-shadow: 0 0 3px;
+}
+
+.headSlider {
+    background-color: #fff;
+}
+
+header {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#logo {
+    position: relative;
+    h1 {
+        position: absolute;
+        top: 3px;
+        left: 50px;
+        font-size: 2em;
+        color: $bright_red;
+        display: inline;
+        font-weight: 100; 
+    }
+}
+
+.menu {
+    ul {
+        padding-top: 2em;
+    }
+    li {
+        display: inline;
+        a {
+            padding: .5em .35em;
+            letter-spacing: 1px;
+        } 
+        a:link, a:visited {
+            text-decoration: none;
+            color: $text_grey;
+        } 
+        a:hover, a:active, a:focus {
+            text-decoration: none;
+            background-color: $bright_red;
+            color: #fff;
+        }
+    }
+}
+/* Join button */
+.join {
+    padding-top: 1.75em;
+}
+
+.join {
+    button {
+        background-color: $deep-blue;
+        border: none;
+        color: #fff;
+        padding: .2em .75em;
+        font-size: 1em;
+        font-weight: 1;
+        letter-spacing: 2px;
+        float: right;
+    }
+    button:hover {
+        background-color: $light-blue;
+    }
+}
+/* top slider */
+.slider {
+    background: url(../images/fox.jpg) no-repeat;
+    border: solid 3px #090909;
+    min-height: 500px;
+    position: relative;
+    margin: 2em;
+}
+.about {
+    h2 {
+        color: $light_blue;
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 1em 1em 0;
+    }
+    hr {
+        border: solid $light_blue 2px;
+        width: 90%;
+        margin: 1em auto;
+    }
+    p {
+        line-height: 2;
+        margin: 1.5em 1.5em;
+    }
+    background: #fff;
+    border: solid 3px #090909;
+    min-height: 500px;
+    position: relative;
+    margin: 2em;
+}
+.portfolio {
+    background: #fff;
+    border: solid 3px #090909;
+    min-height: 500px;
+    position: relative;
+    margin: 2em;
+}
+/* information box in slider */
+.info {
+    background: $bright_red;
+    color: #fff;
+    position: absolute;
+    bottom: 2em;
+    left: 1.3em;
+    padding: 1.5em .75em;
+    width: 45%;
+    h2 {
+        font-size: 1.75em;
+        font-weight: 100;
+        padding-bottom: 15px;
+    }
+    p {
+        font-size: .75em;
+        font-weight: 100;
+        padding-top: 15px;
+        line-height: 1.5;
+    }
+    a:link, a:visited {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.35em;
+    }
+    a:hover, a:active, a:focus {
+        color: #fff;
+        text-decoration: underline;
+        font-size: 1.35em;
+    }
+    hr {
+        border-top: dotted 1px #fff;
+    }
+}
+/* small green area in information box */
+#plusArea { 
+    width: 0; 
+    height: 0; 
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 75px solid $accent_green; 
+    border-left: 75px solid transparent; 
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+#plus {
+    position: absolute;
+    bottom: 3px;
+    right: 8px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.more {
+    float: right;
+    color: #fff;
+    background-color: $bright_red;
+    padding: 5px 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    letter-spacing: 1px;
+    border: none;
+}
+
+.more:hover {
+    background-color: lighten($bright_red, 5%);
+}
+/* area with info about design, websites, work etc. */
+.boxes {
+    background-color: #fff;
+    padding-top: 2em;
+    .grid_4 {
+        //border: solid 1px $light_grey;
+        h2, p {
+            //padding: 1em;
+        }
+    }
+    hr {
+        border: solid 1px $light_blue;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    h2 {
+        font-weight: 200;
+        font-size: 1.33em;
+    }
+    .image_holder {
+        background-color: $light_blue;
+        height: 100px;
+        img {
+            border: solid 2px $light_blue;
+            width: 100%;
+        }
+    }
+    p {
+        padding-top: 3.5em;
+        line-height: 1.5;
+    }
+}
+/* row with information about employees */
+.meet {
+    background-color: #fff;
+    padding-top: 2em;
+    h2, h3, p {
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+    h2 {
+        margin-top: 1em;
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+    h3 {
+        font-size: 1.1em;
+        font-weight: 300;
+        color: $bright_red;
+    }
+    p {
+        font-size: .75em;
+        line-height: 1.5;
+    }
+    .image_holder {
+        background-color: $light_blue;
+        height: 75px;
+        width: 75px;
+        float: left;
+        margin: 0 10px 10px 10px;
+        .plusArea { 
+            width: 0; 
+            height: 0; 
+            position: absolute;
+            bottom: 10px;
+            left: 60px;
+            border-bottom: 25px solid $accent_green; 
+            border-left: 25px solid transparent; 
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .plus {
+            position: absolute;
+            bottom: 9px;
+            left: 74px;
+            color: #fff;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    }
+    .grid_3 {
+        position: relative;
+    }
+}
+.employees {
+    position: relative;
+    background-color: $lightest_grey;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    a:link, a:visited {
+        color: $text-grey;
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        color: $text-grey;
+        text-decoration: underline;
+    }
+    hr {
+        border: solid $deep_blue 1px;
+        width: 95%;
+        margin: 1em auto;
+    }
+}
+.triangle-right { 
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent; 
+    border-left: 14px solid red; 
+    border-bottom: 7px solid transparent; 
+    position: absolute;
+    bottom: .80em;
+    right: 2.75em;
+}
+
+.mobile {
+    padding-top: 2em;
+    background-color: #fff;
+    margin-bottom: 1em;
+    hr {
+        border: 1px dotted $deep_blue;
+        margin: 1em 0;
+    }
+    img {
+        max-width: 30%;
+        float: left;
+        margin-right: 15px;
+    }
+    .grid_4 {
+        h2 {
+            font-family: Parisienne;
+            color: $bright_red;
+            font-weight: 400;
+            font-size: 2em;
+        }
+    }
+}
+/* contact page styles */
+.contact {
+    line-height: 2;
+    h2 {
+        color: $deep_blue;
+        font-size: 1.75em;
+        font-weight: 300;
+        margin-top: 1em;
+    }
+    hr {
+        border: 1px dotted $deep_blue;
+        margin: 1em 0;
+    }
+    input, textarea, button {
+        margin: .8em 0;
+        border: $deep_blue 1px solid;
+    }
+    input:focus, textarea:focus {
+        outline: none;
+        border: none;
+        border-color: $deep_blue;
+        box-shadow: 0 0 7px $deep_blue;
+    }
+    button {
+        background-color: $deep-blue;
+        border: none;
+        color: #fff;
+        padding: .2em .75em;
+        font-size: 1em;
+        font-weight: 1;
+        letter-spacing: 2px;
+        float: left;
+    }
+    button:hover {
+        background-color: $light-blue;
+    }
+}
+.responsive {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+/* footer styles */
+footer {
+    height: 100px;
+    margin: 1em 0;
+    background-color: #fff;
+    line-height: 6;
+    letter-spacing: 1px;
+    box-shadow: 0 0 3px;
+    a:link, a:visited {
+        color: $text_grey;
+        text-decoration: none;
+    }
+    a:hover, a:active {
+        color: $text_grey;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+
+#hooman {
+    float: right;
+}
