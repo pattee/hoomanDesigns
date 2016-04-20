@@ -433,6 +433,20 @@ li a:hover, li a:active {
 	border: 9px solid #6A6A6A;
 }
 
+#pinetree {
+    background-image: url("../images/pinetreeBlackWhite.jpg");
+	width: 275px;
+	height: 275px;
+	border: 9px solid #D0D0D0;
+	border-radius: 50%;
+	margin: 30px 20px;
+}
+
+#pinetree:hover {
+    background-image: url("../images/pinetree.jpg");
+	border: 9px solid #6A6A6A;
+}
+
 
 
 
