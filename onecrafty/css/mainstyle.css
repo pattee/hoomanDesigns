@@ -7,13 +7,13 @@
 }
 
 /* sets up the basic font for the whole page */
-html {	
+html {
 	font-family: 'Nunito', serif;
 }
 
 /* sets up the header information */
 #header {
-	margin: 4.5em 0 0 0;
+	margin: 0;
 	padding: 0;
 	position: relative;
 }
@@ -56,7 +56,7 @@ html {
 }
 
 #navigation a:hover {
-  	color: #ccc; 
+  	color: #ccc;
 }
 
 /* adjusts the opacity of the images in the header, like the social media buttons */
@@ -69,26 +69,6 @@ html {
 	opacity: 0.6;
 }
 
-#logo, #facebook, #twitter, #pinterest  {
-	position: absolute;
-	bottom: -6em;
-	left: -14em;
-}
-
-#facebook {
-	bottom: -13em;
-	left: -12em;
-}
-
-#twitter {
-	bottom: -20.5em;
-	left: -12em;
-}
-
-#pinterest {
-	bottom: -28em;
-	left: -12em;
-}
 
 /* make the table inline so it falls on the same line as the image */
 #amanda table {
@@ -99,7 +79,7 @@ html {
 #amanda {
 	font-family: 'Rockwell', 'Kreon', serif;
 }
-  
+
 #amanda h1 {
 	font-size: 2.6em;
 	line-height: 1;

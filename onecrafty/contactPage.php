@@ -3,14 +3,14 @@
 	$lastName = $_POST['lastName'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
-	
+
 	$from = 'From: ' . $email;
 	$to = 'amandorka@gmail.com';
 	$subject = 'contacting from your one crafty historian website';
 	$body = "From: $firstName $lastName\n Email: $email\n Message: $message";
-		
+
 	$human = $_POST['human'];
-	
+
 	if(mail ($to, $subject, $body, $from) && $human === '5') {
 		$img = "successfulFox";
 		$success = "Your message has been successfully sent. If you have managed to be interesting you will receive a reply.";
@@ -36,7 +36,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Backup google font -->
-  <link href='http://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'> 
+  <link href='http://fonts.googleapis.com/css?family=Kreon:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Nunito:400,700' rel='stylesheet' type='text/css'>
 
   <!-- CSS
@@ -59,10 +59,6 @@
 	  <div class="row" id="header">
 	    <a href="index.html">
 	    <div class="seven columns" id="amanda">
-	    	<img src="images/logowebsite.gif" width="225" id="logo">
-	    	<img src="images/facebook.gif" id="facebook" width="175">
-	    	<img src="images/twitter.gif" id="twitter" width="175">
-	    	<img src="images/pinterest.gif" id="pinterest" width="175">
 	    	<table>
 	    	<tr>
 	    		<td><h1>one</h1></td>
@@ -84,19 +80,19 @@
 	    	</ul>
 		</div>
 	  </div>
-	  
+
 	  <hr>
-  	
+
 	  <div class="row">
 	    <div class="twelve columns">
 	      <img src="images/<?php echo($img) ?>.jpg">
 	      <h6><? echo($success); ?></h6>
 	    </div>
 	  </div>
-	    
-	  
+
+
 	  <hr>
-	    
+
 	  <div class="row" id="footer">
 		    <div class="six columns">
 		    	<a href="http://www.patteegreen.com" target="_blank">crafted by Hooman Designs</a>
@@ -105,7 +101,7 @@
 		    	<a href="index.html">one crafty historian &copy; 2015</a>
 		    </div>
 	  </div>
-	  
+
 </div>
 
 <!-- End Document
